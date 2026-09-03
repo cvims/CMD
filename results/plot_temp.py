@@ -52,7 +52,6 @@ def beautify(ax):
 # =========================================================
 # EXPERIMENTS
 # =========================================================
-
 CNN_EXPERIMENTS = {
     "title": "(a) CNN",
     "paths": [
@@ -121,7 +120,7 @@ axes[0].set_ylabel("FPR (%)")
 plt.tight_layout()
 
 # =========================================================
-# Save (ECCV quality)
+# Save
 # =========================================================
 plt.savefig("cnn_vit_temperature_fpr.pdf", bbox_inches="tight")
 plt.savefig("cnn_vit_temperature_fpr.png", dpi=400, bbox_inches="tight")

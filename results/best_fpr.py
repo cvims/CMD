@@ -2,7 +2,9 @@ import os
 import sys
 import pandas as pd
 
-
+# =========================================================
+# Save best run
+# =========================================================
 def process_csv(csv_path):
     try:
         df = pd.read_csv(csv_path)
@@ -37,6 +39,9 @@ def process_csv(csv_path):
         print(f"[ERROR] Could not write {output_path}: {e}")
 
 
+# =========================================================
+# Main
+# =========================================================
 def main():
     if len(sys.argv) != 2:
         print("Usage: python best_fpr_per_csv.py <directory>")

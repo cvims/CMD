@@ -2,10 +2,12 @@ import os
 import pandas as pd
 import sys
 
-
 METRICS = ["fpr", "auc", "aurc", "accuracy"]
 
 
+# =========================================================
+# Aggregation of experimental runs
+# =========================================================
 def aggregate_best_files(root_dir):
     for root, dirs, files in os.walk(root_dir):
         best_files = [
@@ -62,6 +64,9 @@ def aggregate_best_files(root_dir):
         print(f"[OK] Aggregated {root} → {output_path}")
 
 
+# =========================================================
+# Main
+# =========================================================
 def main():
     if len(sys.argv) != 2:
         print("Usage: python aggregate_results.py <root_directory>")
