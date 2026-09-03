@@ -1,0 +1,9 @@
+metric,value
+fpr_mean,44.105
+fpr_std,0.532
+auc_mean,86.225
+auc_std,0.248
+aurc_mean,2.412
+aurc_std,0.039
+accuracy_mean,89.576
+accuracy_std,0.007
