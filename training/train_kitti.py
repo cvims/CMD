@@ -31,7 +31,7 @@ from utils.kitti import KITTIClassification
 # ==========================================================
 CHECKPOINTS_ROOT = os.environ.get(
     "CHECKPOINTS_DIR",
-    "path/to/save/checkpoints/kitti"
+    "path/to/save/checkpoints/KITTI"
 )
 
 # ==========================================================
@@ -633,7 +633,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_root",
         type=str,
-        default="../../../data/KITTI",
+        default="path/to/data/KITTI",
         help="Path to the KITTI dataset root directory",
     )
 

@@ -26,7 +26,7 @@ from utils.models import get_model_essentials
 # =====================
 CHECKPOINTS_DIR = os.environ.get(
     "CHECKPOINTS_DIR",
-    "checkpoints/tinyimagenet/"
+     "path/to/save/checkpoints/tinyimagenet/"
 )
 
 # =====================
@@ -147,8 +147,8 @@ def main(args):
     print("==> Preparing TinyImageNet...")
     train_tf, test_tf = build_transforms()
 
-    DATA_DIR = "../../../data/tiny-imagenet-200"
-
+    DATA_DIR = "path/to/data/tinyimagenet"
+    
     train_set = ImageFolder(os.path.join(DATA_DIR, "train"), transform=train_tf)
     val_set   = ImageFolder(os.path.join(DATA_DIR, "val"), transform=test_tf)
 

@@ -35,7 +35,7 @@ from utils.nuimages import NuImagesClassification
 # =====================================================
 CHECKPOINTS_ROOT = os.environ.get(
     "CHECKPOINTS_DIR",
-    "path/to/save/checkpoints/nuimages/"
+    "path/to/save/checkpoints/nuImages/"
 )
 
 def build_model(
@@ -493,7 +493,7 @@ if __name__ == "__main__":
     # -----------------------------
     parser.add_argument(
         "--data_root",
-        default="../../../data/nuImages",
+        default="path/to/data/nuImagenes",
         type=str,
         help="Path to nuImages root directory"
     )
