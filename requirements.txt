@@ -1,0 +1,21 @@
+# Core PyTorch and vision
+torch==2.2.0
+torchvision==0.17.0
+timm==0.9.7
+pytorch-lightning==2.5.2
+
+# Data science and ML
+scikit-learn==1.4.2
+typed-argument-parser==1.10.1
+
+# Data manipulation & logging
+pandas<2.2  # compatible with PyTorch ecosystem
+tensorboard==2.15.1
+
+# Plotting
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Fix common dependency issues
+numpy<1.25  # avoids _ARRAY_API errors with torch 2.2.0
+protobuf<=3.20.3  # avoids ONNX / torch.onnx protobuf conflicts
