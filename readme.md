@@ -1,6 +1,8 @@
 [ECCV DriveX 2026] CMD: Class Margin Dispersion for Post-Hoc Misclassification Detection
 ==============================================================================================
 
+![CMD](plots/poster.png)
+
 Our implementation builds upon and extends the code provided by the Relative Uncertainty (Rel-U) project.
 https://github.com/edadaltocg/relative-uncertainty
 
@@ -12,7 +14,7 @@ Key Contributions
 - Strong empirical performance: CMD improves key uncertainty metrics, including AUROC, FPR@95TPR, and AURC, across autonomous-driving datasets (KITTI nuImages) and Tiny-ImageNet.
 - Implements post-hoc misclassification detection baselines (MSP, ODIN, Entropy, Doctor, REL-U, LogitGap, CMD (ours)).
 
-Installation
+Installation[text](results/nuimages/resnet18) [text](results/nuimages/resnet18/logitgapN)
 ------------
 1. Clone the repository:
    - git clone <repo_url>

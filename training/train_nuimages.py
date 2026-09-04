@@ -493,7 +493,7 @@ if __name__ == "__main__":
     # -----------------------------
     parser.add_argument(
         "--data_root",
-        default="path/to/data/nuImages",
+        default="../../../data/nuImages",
         type=str,
         help="Path to nuImages root directory"
     )

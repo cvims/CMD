@@ -633,7 +633,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_root",
         type=str,
-        default="path/to/data/KITTI",
+        default="../../../data/KITTI",
         help="Path to the KITTI dataset root directory",
     )
 
